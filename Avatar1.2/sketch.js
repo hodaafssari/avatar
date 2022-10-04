@@ -1,4 +1,6 @@
 //let count = 0
+let mic;
+let micLevel;
 let sketchStarted = false
 function setup() {
     createCanvas(500,500);
