@@ -4,10 +4,12 @@ function setup() {
     background(255);
     rectMode (CENTER);
       ellipseMode(CENTER);
+      
+      createButton("Start Mic");  
      mic = new p5.AudioIn ();
     mic.start();
 
-    createButton("Start Mic");
+   
     //noStroke
     // strokeWeight (.75)
     
