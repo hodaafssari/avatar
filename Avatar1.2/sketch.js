@@ -116,7 +116,7 @@ function setup() {
     ellipse(width/2.56, height/6.25,width/33.33,height/50)
     //translate(xpos,ypos)
     circle(width/2.63,height/6.25,width/50)
-    translate(xpos,ypos)
+    //translate(xpos,ypos)
     pop()
     
   }
