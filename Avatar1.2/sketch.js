@@ -5,7 +5,7 @@ function setup() {
     rectMode (CENTER);
       ellipseMode(CENTER);
       
-      createButton("Start Mic");  
+      createButton("Start Mic").mousePressed(startSketch);  
      mic = new p5.AudioIn ();
     mic.start();
 
