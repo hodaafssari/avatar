@@ -1,4 +1,5 @@
 //let count = 0
+let sketchStarted = false
 function setup() {
     createCanvas(500,500);
     background(255);
@@ -6,33 +7,43 @@ function setup() {
       ellipseMode(CENTER);
       
       createButton("Start Mic").mousePressed(startSketch);  
-     mic = new p5.AudioIn ();
-    mic.start();
+     
 
    
     //noStroke
     // strokeWeight (.75)
     
   }
+
+  function startSketch(){
+    mic = new p5.AudioIn ();
+    mic.start();
+
+    sketchStarted = true
+  }
   
   function draw() {
-    let x = width/2 //x=250
-    let y = height/3.33 //y=150
-    
-    faceHead();
-    bow();
-    bow(200,200);
-    eyebrows();
-    eyes();
-    nose();
-    mouth();
-    body();
-    pocket();
-    smileyFace();
-    arms();
-    hands();
-    legs();
-    feet();
+    if (sketchStarted){
+      let x = width/2 //x=250
+      let y = height/3.33 //y=150
+      
+      faceHead();
+      bow();
+      bow(200,200);
+      eyebrows();
+      eyes();
+      nose();
+      mouth();
+      body();
+      pocket();
+      smileyFace();
+      arms();
+      hands();
+      legs();
+      feet();
+
+    }
+   
   
    //  push()
    // //translate(10,10)
